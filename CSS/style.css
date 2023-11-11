@@ -1,0 +1,124 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.color {
+    background: var(--system-violet, #6725a8);
+}
+
+.header {
+    height: auto;
+    display: flex;
+    padding: 16px 3px 0 24px;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    border-radius: 24px 24px 0 0;
+    background: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.header_content-row {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 47px 0px;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.header_nav {
+    display: flex;
+    width: 171px;
+    height: 56px;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav_burgerButton {
+    background: 0 0;
+    padding: 21px 9px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.nav_burgerButton-off::before {
+    top: -10px;
+}
+
+.nav_burgerButton-off {
+    width: 28px;
+    height: 4px;
+    position: relative;
+    display: block;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.nav_burgerButton-off::after {
+    bottom: -10px;
+}
+
+.nav_burgerButton-off::before,
+.nav_burgerButton-off::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: block;
+    background: #fff;
+    border-radius: 4px;
+}
+
+
+.nav_logo {
+    padding: 1px 0px 7px 0px;
+    color: #ffffff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    font-variant: all-small-caps;
+    letter-spacing: 0.56px;
+}
+
+.footer {
+    display: flex;
+    padding: 48px 0 24px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    position: relative;
+    color: #FFFFFFB2; 
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.footer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    border-radius: 0 0 24px 24px;
+    background: #fff;
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+}
