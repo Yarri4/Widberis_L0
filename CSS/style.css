@@ -686,18 +686,128 @@
 .size_date {
     height: 56px;
 }
-.inWork_part { }
-.part_pay {
-	
+.inWork_content_info {
+    display: flex;
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
 }
-.delivery_return { }
-.part_recipient { }
+.info_punkt{
+    display: flex;
+    width: 398px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+.punkt_adres{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+.punkt_adres_info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.rep {
+    display: flex;
+    padding: 2px 0px;
+    align-items: center;
+    gap: 2px;
+    flex-direction: row;
+}
+.rep_text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.star {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    padding: 2px 0px;
+    align-items: center;
+    gap: 2px;
+    background-image: url(/img/icon/star_fill.svg);
+}
+.Content_goods {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
 
+.goods {
+    display: flex;
+    height: 56px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 8px;
+}
+.good1 { 
+    width: 40px;
+    height: 56px;
+    background-image: url(/img/1400px/Bitmap.png);
+}
+.good2 {
+    width: 40px;
+    height: 56px;
+    background-image: url(/img/1400px/Bitmap_2.png);
+}
+.good3 { 
+    width: 40px;
+    height: 56px;
+    background-image: url(/img/1400px/Bitmap_3.png);
+}
 
-
-
-
-
+.part { }
+.delivery_return { 
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.part_delivery_container { 
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.conteiner_return{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+.return_icon{
+    width: 22px;
+    height: 22px;
+    background-image: url(/img/icon/price_shipping.svg);
+}
+.return_agre{
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.textGreen{
+    color: #0CB477;
+}
 
 
 /* Подвал */
