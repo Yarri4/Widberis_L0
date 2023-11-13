@@ -191,9 +191,10 @@
 
 .main_content {
     display: flex;
+    flex-direction: column;
     padding: 0px 24px 0px 24px;
     align-items: flex-start;
-    gap: 32px;
+    gap: 40px;
     align-self: stretch;
 }
 
@@ -201,7 +202,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 27px;
+    gap: 16px;
     flex: 1 0 0;
 }
 
@@ -213,13 +214,19 @@
     letter-spacing: -0.28px;
     color: #000000;
 }
+.basket_header>h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
 
 .basket_cheker {
     display: flex;
     width: 891px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 20px;
 }
 
 .cheker_part {
@@ -230,7 +237,7 @@
     align-self: stretch;
 }
 
-.part_chekText_block{
+.part_chekText_block {
     display: flex;
     align-items: center;
     gap: 11px;
@@ -245,30 +252,338 @@
     align-self: stretch;
     flex-direction: row;
 }
-.chekText-arrow { 
+
+.chekText-arrow {
     display: block;
     background-image: url(/img/icon/iconArrow.svg);
     width: 20px;
     height: 20px;
     margin-left: auto;
 }
-.chekText { 
+
+.chekText {
     display: flex;
     align-items: center;
 }
+
 .chekText-cliker {
     display: block;
     background-image: url(/img/icon/checkboxoff.svg);
     width: 22px;
     height: 22px;
 }
+
 .chekText-text {
     display: block;
 }
 
+.cheker_part {
+    display: flex;
+    width: 891px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cheker_part-topBorder {
+    border-top: 1px solid #0000001A;
+}
+
+.cheker_part-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.cards_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: row;
+}
+
+.cards_block-photo {
+    display: flex;
+    padding-top: 12px;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    flex-direction: row;
+    width: 397px;
+}
+
+.titleCard{
+    width: 250px;
+}
+
+.cards_block-sum.margin { 
+    margin-right: -45px;
+}
 
 
+.cards_block-sum {
+    display: flex;
+    width: 226px;
+    padding-top: 9px;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    flex-direction: row;
+}
 
+.block-photo_cardAndCheck {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row;
+}
+
+.block-photo_opis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.card {
+    width: 72px;
+    height: 96px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    color: #0000000D;
+}
+
+.photo1 {
+    background-image: url(/img/1400px/Frame_3853.png);
+}
+.photo2 {
+    background-image: url(/img/1400px/Frame_2.png);
+}
+.photo3 {
+    background-image: url(/img/1400px/Fram_3.png);
+}
+.photo1.negative{
+    background-image: url(/img/1400px/Frame_3853-negative.png);
+}
+.photo2.negative{
+    background-image: url(/img/1400px/Frame_277132129-negative.png);
+}
+.photo3.negative{
+    background-image: url(/img/1400px/Frame_3-negative.png);
+}
+
+
+.titleCard {
+    align-self: stretch;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.colorSize {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-direction: row;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.infoProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.textCard {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+
+}
+
+.colorGrey{
+    color: #9797AF;
+}
+.colorRed{
+    color: #FF3B30; 
+    width: 100px;
+}
+
+.textWrong {
+    display: flex;
+    height: 16px;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+    flex-direction: row;
+}
+
+.Wrong {
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/icon/icon-Wrong.svg);
+}
+
+.block-sum_count {
+    display: flex;
+    padding-top: 3px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.counter {
+    width: 100px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+}
+
+.counter_minus,
+.counter_plus {
+    background: 0 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.counter_minus::after,
+.counter_plus::after {
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #242424;
+    border-radius: 4px;
+    display: block;
+    left: calc(50% - 6px);
+    position: absolute;
+    top: 50%;
+}
+
+.counter_plus::before {
+    transform: rotate(-90deg);
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: #242424;
+    border-radius: 4px;
+    display: block;
+    left: calc(50% - 6px);
+    position: absolute;
+    top: 50%;
+}
+
+.disable::after {
+    background-color: #bfbfc9;
+}
+
+.disable::before {
+    background-color: #bfbfc9;
+}
+
+.number {
+    display: flex;
+    width: 44px;
+    height: 23px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #000000;
+}
+
+.counter_button__conteiner{
+    display: flex;
+    width: 24px;
+    padding: 2px 7px 6px 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-sum_likeCart { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconLike { 
+    background-image: url(/img/icon/icon_Like.svg);
+    width: 20px;
+    height: 20px;
+}
+.iconCart { 
+    background-image: url(/img/icon/icon_Cart.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.block-sum_price { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.price { 
+    display: flex;
+    align-items: baseline;
+    color: #000000;
+    gap: 5px;
+}
+.oldPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.price_nominal {
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+.price_valute { 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    text-align: right;
+}
+.oldPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    color: #9797AF;
+}
+.oldPrice_sum { 
+    text-decoration: line-through;
+    border-bottom: 1px dashed #9797AF;
+}
 
 
 
