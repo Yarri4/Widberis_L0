@@ -584,7 +584,114 @@
     text-decoration: line-through;
     border-bottom: 1px dashed #9797AF;
 }
-
+.inWork{
+    align-self: stretch;
+}
+.inWork_part { 
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+.part_delivery { 
+    padding: 16px 0px 24px 0px;
+    align-items: center;
+    gap: 24px;
+}
+.part_pay { 
+    padding: 16px 24px 24px 24px;
+    gap: 8px;
+    align-items: flex-start;
+}
+.part_recipient {
+    padding: 16px 24px 24px 24px;
+    align-items: flex-start;
+    gap: 16px;
+}
+.part_delivery_way {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    align-self: stretch;
+}
+.delivery_return {
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch; 
+}
+.inWork_header { 
+    display: flex;
+    padding: 0px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+.inWork_heder_title {
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+    flex: 1 0 0;
+}
+.inWork_header_button{
+    display: flex;
+    padding-top: 7px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    color: #CB11AB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+}
+.inWork_content { 
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.inWork_content_data{
+    display: flex;
+    padding-left: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.inWork_content_data.flex {
+    flex: 1 0 0;
+    padding-right: 0px;
+}
+.data_block {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-start;
+}
+.size_punkt{
+    height: 44px;
+}
+.size_prise {
+    height: 24px;
+}
+.size_date {
+    height: 56px;
+}
+.inWork_part { }
+.part_pay {
+	
+}
+.delivery_return { }
+.part_recipient { }
 
 
 
