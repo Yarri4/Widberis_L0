@@ -187,16 +187,129 @@
 
 .main {
     display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    padding: 0px 24px 0px 24px;
 }
 
 .main_content {
     display: flex;
     flex-direction: column;
-    padding: 0px 24px 0px 24px;
     align-items: flex-start;
     gap: 40px;
     align-self: stretch;
 }
+
+.pryChek_sum { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.sum_itog { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.sum_pr {   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.chekBlock_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.delivery_punkt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.chekBlock_delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.sum_pr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.flex-end {
+    text-align: center;
+}
+
+.main_tablPay-warap {
+    display: flex;
+    max-height: 500px;
+    width: auto;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.button-click {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    height: 44px;
+    padding: 0px 32px 5px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #CB11AB;
+}
+
+.main_chekBlock {
+    display: flex;
+    width: 429px;
+    padding: 16px 24px 24px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.chekBlock_button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+
+
+
+
+
+
+
 
 .content_basket {
     display: flex;
@@ -314,10 +427,6 @@
     width: 397px;
 }
 
-.titleCard{
-    width: 250px;
-}
-
 .cards_block-sum.margin { 
     margin-right: -45px;
 }
@@ -357,6 +466,10 @@
     color: #0000000D;
 }
 
+.text-border {
+    border-bottom: 1px solid #0000001A;
+}
+
 .photo1 {
     background-image: url(/img/1400px/Frame_3853.png);
 }
@@ -374,6 +487,11 @@
 }
 .photo3.negative{
     background-image: url(/img/1400px/Frame_3-negative.png);
+}
+.chek_icon {
+    background-image: url(/img/icon/ico_chek.svg);
+    height: 13px;
+    width: 13px;
 }
 
 
@@ -629,6 +747,7 @@
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+    justify-content: space-between;
 }
 .inWork_heder_title {
     font-family: Segoe UI;
@@ -637,7 +756,8 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.24px;
-    flex: 1 0 0;
+    display: flex;
+    justify-content: space-between;
 }
 .inWork_header_button{
     display: flex;
@@ -767,6 +887,19 @@
     height: 56px;
     background-image: url(/img/1400px/Bitmap_3.png);
 }
+.icon_pan {
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/icon/icon_pan.svg);
+}
+
+.returnCard_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
 
 .delivery_return { 
     display: flex;
@@ -804,8 +937,22 @@
     font-weight: 400;
     line-height: 16px;
 }
+
+.returnCard_rec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
 .textGreen {
     color: #0CB477;
+    border-bottom: 1px dashed #0CB477;
+    display: inline;
+}
+.text_purple {
+    color: #CB11AB;
+    border-bottom: 1px dashed #CB11AB;
 }
 .bank_icon {
     width: 30px;
@@ -829,8 +976,10 @@
 }
 
 
-
-.padding_0{
+.padding-top {
+    padding-top: 7px;
+}
+.padding_0 {
     padding: 0;
 }
 
@@ -876,6 +1025,27 @@
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
+}
+
+.delivery-padding {
+    padding: 16px 0 12px 0;
+    gap: 8px;
+}
+.delivery-padding-bot {
+    padding: 16px 0 0 0;
+}
+
+.returnCard_agry {
+    display: flex;
+    padding: 8px 8px 12px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
 }
 
 /* Подвал */
