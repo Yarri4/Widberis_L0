@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    width: auto;
 }
 
 .color {
@@ -187,6 +188,8 @@
 
 .main {
     display: flex;
+    flex-direction: row;
+    justify-content:space-between;
     align-items: flex-start;
     gap: 32px;
     align-self: stretch;
@@ -286,7 +289,8 @@
 
 .main_chekBlock {
     display: flex;
-    width: 429px;
+    max-width: 429px;
+    min-width: 304px;
     padding: 16px 24px 24px 24px;
     flex-direction: column;
     align-items: center;
@@ -923,15 +927,20 @@
     gap: 8px;
     align-self: stretch;
 }
+.part__delivery_return {
+    margin-left: 8px;
+}
+.icon_wrap {
+    width: 22px;
+    height: 22px;
+}
 .return_icon{
+    display: block;
     width: 22px;
     height: 22px;
     background-image: url(/img/icon/price_shipping.svg);
 }
 .return_agre{
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -1063,6 +1072,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+    width: auto;
 }
 
 .footer::after {
