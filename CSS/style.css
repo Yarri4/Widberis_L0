@@ -14,6 +14,7 @@
 
 .header {
     height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     padding: 16px 3px 0 24px;
@@ -42,6 +43,7 @@
     align-items: center;
     gap: 32px;
     align-self: stretch;
+    width: 100%;
 }
 
 .header_nav {
@@ -103,7 +105,7 @@
     display: flex;
     gap: 8px;
     height: 48px;
-    width: 930px;
+    width: 66.42%;
     padding: 0px 20px;
     align-items: center;
     flex: 1 0 0;
@@ -149,6 +151,7 @@
     align-items: flex-end;
     gap: 40px;
     align-self: stretch;
+    padding-right: 17px;
 }
 
 .profileBlock-part {
@@ -202,6 +205,7 @@
     align-items: flex-start;
     gap: 40px;
     align-self: stretch;
+    width: 63.6%;
 }
 
 .pryChek_sum { 
@@ -321,6 +325,7 @@
     align-items: flex-start;
     gap: 16px;
     flex: 1 0 0;
+    width: 100%;
 }
 
 .basket_header>h1 {
@@ -340,7 +345,7 @@
 
 .basket_cheker {
     display: flex;
-    width: 891px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -396,7 +401,7 @@
 
 .cheker_part {
     display: flex;
-    width: 891px;
+    width: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
